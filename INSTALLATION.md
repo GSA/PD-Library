@@ -1,0 +1,39 @@
+# Installation and Configuration
+
+- Create the following Public Groups and grant access using Hierarchy:
+  - PD Library-Classifiers
+  - PD Library-Master Classifiers
+  - PD Library-Readers
+  - PD Library-Staffers
+- Create the following Sharing Settings:
+  - PD Library Classifiers
+    - Label: PD Library Classifiers
+    - Criteria 1: Owner Id Not Equal To NULL
+    - Criteria 2: Hide Obsolete Record Equals True
+    - Filter Logic: 1 OR 2
+    - Share With: Group, PD Library-Classifiers
+    - Access Level: Read/Write
+  - PD Master Classifiers
+    - Label: PD Master Classifiers
+    - Criteria 1: Owner Id Not Equal To NULL
+    - Criteria 2: Hide Obsolete Record Equals True
+    - Filter Logic: 1 OR 2
+    - Share With: Group, PD Library-Master Classifiers
+    - Access Level: Read/Write
+  - PD Reader
+    - Label: PD Reader
+    - Criteria 1: Owner Id Not Equal To NULL
+    - Criteria 2: Hide Obsolete Record Equals False
+    - Filter Logic: 1 OR 2
+    - Share With: Group, PD Library-Readers
+    - Access Level: Read
+  - PD Library Share with Staff
+    - Label: PD Library Share with Staff
+    - Criteria 1: Owner Id Not Equal To NULL
+    - Criteria 2: Hide Obsolete Record Equals False
+    - Filter Logic: 1 AND 2
+    - Share With: Group, PD Library-Staffers
+    - Access Level: Read/Write
+- Make the App ‘PD Library’ available in the Permission Set 'PD Library Classifiers - CRE'
+- Make the Tab Setting to Visible for ‘Libraries’ in the Permission set 'PD Library Classifier - CRE'
+  - **NOTE:** To be able to create New Libraries , you need to have "CRM" license
