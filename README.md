@@ -1,5 +1,7 @@
 # Position Description Library
 
+_This project has been archived, no further updates are planned at this time._
+
 ## About
 
 For large organizations; it can be difficult to manage all of the positions available as well as information around that position (pay grade etc.). It can also be difficult to organize the information to help determine business hierarchy, and position category. Many organizations leverage spreadsheets or paper forms to maintain this information, which can cause confusion because of the inability to easily report on or find position information.
